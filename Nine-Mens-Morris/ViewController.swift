@@ -69,12 +69,12 @@ class ViewController: UIViewController {
                 if (state_init) {
                     if (player1) {
                         game.AddWhitePiece(point.1)
-                        //change point to gold
+                        point.0.image = drawPointImage(CGSize(width: 20, height: 20), colorOfImage: UIColor.blueColor().CGColor)
                     }
                     else //black
                     {
                         game.AddBlackPiece(point.1)
-                        //Change point to black
+                        point.0.image = drawPointImage(CGSize(width: 20, height: 20), colorOfImage: UIColor.blackColor().CGColor)
                     }
                     placedPieces++;
                     player1 = !player1
