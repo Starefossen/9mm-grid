@@ -75,7 +75,7 @@ class ViewController: UIViewController {
     }
 }
 
-func drawPointImage(size: CGSize) -> UIImage {
+func drawPointImage(size: CGSize, colorOfImage color: CGColor = UIColor.whiteColor().CGColor) -> UIImage {
     // Setup our context
     let bounds = CGRect(origin: CGPoint.zeroPoint, size: size)
     let opaque = false
@@ -84,7 +84,7 @@ func drawPointImage(size: CGSize) -> UIImage {
     let context = UIGraphicsGetCurrentContext()
     
     // Setup complete, do drawing here
-    CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
+    CGContextSetFillColorWithColor(context, color)
     CGContextSetStrokeColorWithColor(context, UIColor.blackColor().CGColor)
     CGContextSetLineWidth(context, 2.0)
     
