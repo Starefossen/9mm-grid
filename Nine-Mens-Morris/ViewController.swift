@@ -78,7 +78,7 @@ class ViewController: UIViewController {
                     }
                     placedPieces++;
                     player1 = !player1
-                    if(placedPieces == 17) //17 because of 0 based
+                    if(placedPieces == 18) //17 because of 0 based + 1
                     {
                         state_init = false
                     }
