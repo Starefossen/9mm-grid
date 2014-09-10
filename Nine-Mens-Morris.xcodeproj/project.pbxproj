@@ -12,6 +12,7 @@
 		3A4ED86019C0AF9100A0E07C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4ED85E19C0AF9100A0E07C /* Main.storyboard */; };
 		3A4ED86219C0AF9100A0E07C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4ED86119C0AF9100A0E07C /* Images.xcassets */; };
 		3A4ED86E19C0AF9100A0E07C /* Nine_Mens_MorrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED86D19C0AF9100A0E07C /* Nine_Mens_MorrisTests.swift */; };
+		E971F57C19C0D1370090407C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971F57B19C0D1370090407C /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		3A4ED86719C0AF9100A0E07C /* Nine-Mens-MorrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nine-Mens-MorrisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4ED86C19C0AF9100A0E07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4ED86D19C0AF9100A0E07C /* Nine_Mens_MorrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nine_Mens_MorrisTests.swift; sourceTree = "<group>"; };
+		E971F57B19C0D1370090407C /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				3A4ED85E19C0AF9100A0E07C /* Main.storyboard */,
 				3A4ED86119C0AF9100A0E07C /* Images.xcassets */,
 				3A4ED85819C0AF9100A0E07C /* Supporting Files */,
+				E971F57B19C0D1370090407C /* Game.swift */,
 			);
 			path = "Nine-Mens-Morris";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4ED85D19C0AF9100A0E07C /* ViewController.swift in Sources */,
+				E971F57C19C0D1370090407C /* Game.swift in Sources */,
 				3A4ED85B19C0AF9100A0E07C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +399,7 @@
 				3A4ED87319C0AF9100A0E07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A4ED87419C0AF9100A0E07C /* Build configuration list for PBXNativeTarget "Nine-Mens-MorrisTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +408,7 @@
 				3A4ED87619C0AF9100A0E07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
