@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var game = Game()
     var state_init = true
     var player1 = true
+    var placedPieces = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -67,8 +68,25 @@ class ViewController: UIViewController {
                 
                 if (state_init) {
                     if (player1) {
-                        //point.0.image = drawPointImage(
+                        game.AddWhitePiece(point.1)
+                        //change point to gold
                     }
+                    else //black
+                    {
+                        game.AddBlackPiece(point.1)
+                        //Change point to black
+                    }
+                    placedPieces++;
+                    player1 = !player1
+                    if(placedPieces == 17) //17 because of 0 based
+                    {
+                        state_init = false
+                    }
+                    
+                }//state_init
+                else
+                {
+                    //
                 }
             }
         }
