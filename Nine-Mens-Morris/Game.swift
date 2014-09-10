@@ -105,28 +105,28 @@ class Game
         board = Board()
     }
     
-    func AddWhitePiece(p: Int) -> Bool
+    func AddWhitePiece(p: Int) -> (Bool,Bool)
     {
         return AddPieceAt(p, withColor: PointState.White)
     }
     
-    func AddBlackPiece(p: Int) -> Bool
+    func AddBlackPiece(p: Int) -> (Bool,Bool)
     {
         return AddPieceAt(p, withColor: PointState.Black)
     }
     
     
-    func AddPieceAt (point: Int , withColor : PointState) -> Bool
+    func AddPieceAt (point: Int , withColor : PointState) -> (Bool,Bool)
     {
         if(self.board.board[point].State != PointState.Free)
         {
-            return false
+            return (false,false)
         }
         else
         {
             moveCounter++
             self.board.board[point].State = withColor
-            return true
+            return (true,CheckMill(point))
         }
     }
     
