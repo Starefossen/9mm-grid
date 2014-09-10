@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A4ED85B19C0AF9100A0E07C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED85A19C0AF9100A0E07C /* AppDelegate.swift */; };
+		3A4ED85D19C0AF9100A0E07C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED85C19C0AF9100A0E07C /* ViewController.swift */; };
+		3A4ED86019C0AF9100A0E07C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4ED85E19C0AF9100A0E07C /* Main.storyboard */; };
+		3A4ED86219C0AF9100A0E07C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4ED86119C0AF9100A0E07C /* Images.xcassets */; };
+		3A4ED86E19C0AF9100A0E07C /* Nine_Mens_MorrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ED86D19C0AF9100A0E07C /* Nine_Mens_MorrisTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A4ED86819C0AF9100A0E07C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A4ED84D19C0AF9100A0E07C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A4ED85419C0AF9100A0E07C;
+			remoteInfo = "Nine-Mens-Morris";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A4ED85519C0AF9100A0E07C /* Nine-Mens-Morris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nine-Mens-Morris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4ED85919C0AF9100A0E07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A4ED85A19C0AF9100A0E07C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A4ED85C19C0AF9100A0E07C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A4ED85F19C0AF9100A0E07C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A4ED86119C0AF9100A0E07C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A4ED86719C0AF9100A0E07C /* Nine-Mens-MorrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nine-Mens-MorrisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4ED86C19C0AF9100A0E07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A4ED86D19C0AF9100A0E07C /* Nine_Mens_MorrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nine_Mens_MorrisTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A4ED85219C0AF9100A0E07C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A4ED86419C0AF9100A0E07C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A4ED84C19C0AF9100A0E07C = {
+			isa = PBXGroup;
+			children = (
+				3A4ED85719C0AF9100A0E07C /* Nine-Mens-Morris */,
+				3A4ED86A19C0AF9100A0E07C /* Nine-Mens-MorrisTests */,
+				3A4ED85619C0AF9100A0E07C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A4ED85619C0AF9100A0E07C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A4ED85519C0AF9100A0E07C /* Nine-Mens-Morris.app */,
+				3A4ED86719C0AF9100A0E07C /* Nine-Mens-MorrisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A4ED85719C0AF9100A0E07C /* Nine-Mens-Morris */ = {
+			isa = PBXGroup;
+			children = (
+				3A4ED85A19C0AF9100A0E07C /* AppDelegate.swift */,
+				3A4ED85C19C0AF9100A0E07C /* ViewController.swift */,
+				3A4ED85E19C0AF9100A0E07C /* Main.storyboard */,
+				3A4ED86119C0AF9100A0E07C /* Images.xcassets */,
+				3A4ED85819C0AF9100A0E07C /* Supporting Files */,
+			);
+			path = "Nine-Mens-Morris";
+			sourceTree = "<group>";
+		};
+		3A4ED85819C0AF9100A0E07C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A4ED85919C0AF9100A0E07C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A4ED86A19C0AF9100A0E07C /* Nine-Mens-MorrisTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A4ED86D19C0AF9100A0E07C /* Nine_Mens_MorrisTests.swift */,
+				3A4ED86B19C0AF9100A0E07C /* Supporting Files */,
+			);
+			path = "Nine-Mens-MorrisTests";
+			sourceTree = "<group>";
+		};
+		3A4ED86B19C0AF9100A0E07C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A4ED86C19C0AF9100A0E07C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A4ED85419C0AF9100A0E07C /* Nine-Mens-Morris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A4ED87119C0AF9100A0E07C /* Build configuration list for PBXNativeTarget "Nine-Mens-Morris" */;
+			buildPhases = (
+				3A4ED85119C0AF9100A0E07C /* Sources */,
+				3A4ED85219C0AF9100A0E07C /* Frameworks */,
+				3A4ED85319C0AF9100A0E07C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nine-Mens-Morris";
+			productName = "Nine-Mens-Morris";
+			productReference = 3A4ED85519C0AF9100A0E07C /* Nine-Mens-Morris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A4ED86619C0AF9100A0E07C /* Nine-Mens-MorrisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A4ED87419C0AF9100A0E07C /* Build configuration list for PBXNativeTarget "Nine-Mens-MorrisTests" */;
+			buildPhases = (
+				3A4ED86319C0AF9100A0E07C /* Sources */,
+				3A4ED86419C0AF9100A0E07C /* Frameworks */,
+				3A4ED86519C0AF9100A0E07C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A4ED86919C0AF9100A0E07C /* PBXTargetDependency */,
+			);
+			name = "Nine-Mens-MorrisTests";
+			productName = "Nine-Mens-MorrisTests";
+			productReference = 3A4ED86719C0AF9100A0E07C /* Nine-Mens-MorrisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A4ED84D19C0AF9100A0E07C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Den Norske Turistforeningen";
+				TargetAttributes = {
+					3A4ED85419C0AF9100A0E07C = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3A4ED86619C0AF9100A0E07C = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3A4ED85419C0AF9100A0E07C;
+					};
+				};
+			};
+			buildConfigurationList = 3A4ED85019C0AF9100A0E07C /* Build configuration list for PBXProject "Nine-Mens-Morris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A4ED84C19C0AF9100A0E07C;
+			productRefGroup = 3A4ED85619C0AF9100A0E07C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A4ED85419C0AF9100A0E07C /* Nine-Mens-Morris */,
+				3A4ED86619C0AF9100A0E07C /* Nine-Mens-MorrisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A4ED85319C0AF9100A0E07C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4ED86019C0AF9100A0E07C /* Main.storyboard in Resources */,
+				3A4ED86219C0AF9100A0E07C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A4ED86519C0AF9100A0E07C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A4ED85119C0AF9100A0E07C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4ED85D19C0AF9100A0E07C /* ViewController.swift in Sources */,
+				3A4ED85B19C0AF9100A0E07C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A4ED86319C0AF9100A0E07C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4ED86E19C0AF9100A0E07C /* Nine_Mens_MorrisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A4ED86919C0AF9100A0E07C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A4ED85419C0AF9100A0E07C /* Nine-Mens-Morris */;
+			targetProxy = 3A4ED86819C0AF9100A0E07C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A4ED85E19C0AF9100A0E07C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A4ED85F19C0AF9100A0E07C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A4ED86F19C0AF9100A0E07C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A4ED87019C0AF9100A0E07C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A4ED87219C0AF9100A0E07C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Nine-Mens-Morris/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A4ED87319C0AF9100A0E07C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Nine-Mens-Morris/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A4ED87519C0AF9100A0E07C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Nine-Mens-MorrisTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nine-Mens-Morris.app/Nine-Mens-Morris";
+			};
+			name = Debug;
+		};
+		3A4ED87619C0AF9100A0E07C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Nine-Mens-MorrisTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nine-Mens-Morris.app/Nine-Mens-Morris";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A4ED85019C0AF9100A0E07C /* Build configuration list for PBXProject "Nine-Mens-Morris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A4ED86F19C0AF9100A0E07C /* Debug */,
+				3A4ED87019C0AF9100A0E07C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A4ED87119C0AF9100A0E07C /* Build configuration list for PBXNativeTarget "Nine-Mens-Morris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A4ED87219C0AF9100A0E07C /* Debug */,
+				3A4ED87319C0AF9100A0E07C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A4ED87419C0AF9100A0E07C /* Build configuration list for PBXNativeTarget "Nine-Mens-MorrisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A4ED87519C0AF9100A0E07C /* Debug */,
+				3A4ED87619C0AF9100A0E07C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A4ED84D19C0AF9100A0E07C /* Project object */;
+}
