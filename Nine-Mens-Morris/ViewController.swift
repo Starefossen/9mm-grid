@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var points = [(UIImageView, Int)]()
     var game = Game()
     var state_init = true
+    var state_remove = false
     var player1 = true
     var placedPieces = 0;
     
@@ -66,14 +67,20 @@ class ViewController: UIViewController {
             if (touch.view == point.0) {
                 println("Whoho \(point.1)");
                 
-                if (state_init) {
+                if (state_remove) {
+                    print("Remove\n")
+                    game.RemoveAt(point.1)
+                    state_remove = false
+                    point.0.image = drawPointImage(CGSize(width: 20, height: 20), colorOfImage: UIColor.whiteColor().CGColor)
+                }
+                else if (state_init) {
                     if (player1) {
-                        game.AddWhitePiece(point.1)
+                        state_remove = game.AddWhitePiece(point.1).1
                         point.0.image = drawPointImage(CGSize(width: 20, height: 20), colorOfImage: UIColor.blueColor().CGColor)
                     }
                     else //black
                     {
-                        game.AddBlackPiece(point.1)
+                        state_remove = game.AddBlackPiece(point.1).1
                         point.0.image = drawPointImage(CGSize(width: 20, height: 20), colorOfImage: UIColor.blackColor().CGColor)
                     }
                     placedPieces++;
