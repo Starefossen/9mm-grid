@@ -69,16 +69,16 @@ class ViewController: UIViewController {
                 if (state_init) {
                     if (player1) {
                         game.AddWhitePiece(point.1)
-                        //change point to gold
+                        point.0.image = drawPointImage(CGSize(width: 20, height: 20), colorOfImage: UIColor.blueColor().CGColor)
                     }
                     else //black
                     {
                         game.AddBlackPiece(point.1)
-                        //Change point to black
+                        point.0.image = drawPointImage(CGSize(width: 20, height: 20), colorOfImage: UIColor.blackColor().CGColor)
                     }
                     placedPieces++;
                     player1 = !player1
-                    if(placedPieces == 17) //17 because of 0 based
+                    if(placedPieces == 18) //17 because of 0 based + 1
                     {
                         state_init = false
                     }
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     }
 }
 
-func drawPointImage(size: CGSize) -> UIImage {
+func drawPointImage(size: CGSize, colorOfImage color: CGColor = UIColor.whiteColor().CGColor) -> UIImage {
     // Setup our context
     let bounds = CGRect(origin: CGPoint.zeroPoint, size: size)
     let opaque = false
@@ -102,7 +102,7 @@ func drawPointImage(size: CGSize) -> UIImage {
     let context = UIGraphicsGetCurrentContext()
     
     // Setup complete, do drawing here
-    CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
+    CGContextSetFillColorWithColor(context, color)
     CGContextSetStrokeColorWithColor(context, UIColor.blackColor().CGColor)
     CGContextSetLineWidth(context, 2.0)
     
