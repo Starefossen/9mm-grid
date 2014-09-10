@@ -9,32 +9,62 @@ class ViewController: UIViewController {
 
     var location = CGPoint(x: 0, y: 0)
     var imageView = UIImageView()
+    var pointView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        // Size
-        let imageSize = CGSize(width: 300, height: 300)
-        
         // Grid
+        let imageSize = CGSize(width: 300, height: 300)
         imageView = UIImageView(frame: CGRect(origin: CGPoint(x: 10, y: 35), size: imageSize))
         imageView.userInteractionEnabled = true
-        
         self.view.addSubview(imageView)
+        imageView.image = drawCustomImage(imageSize)
         
-        let image = drawCustomImage(imageSize)
-        
-        imageView.image = image
+        // Point
+        var pointSize = CGSize(width: 20, height: 20)
+        pointView = UIImageView(frame: CGRect(origin: CGPoint(x: 2*50+10-10, y: 3*50+35-10), size: pointSize))
+        pointView.userInteractionEnabled = true
+        self.view.addSubview(pointView)
+        pointView.image = drawPointImage(pointSize)
     }
     
     override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
         let touch:UITouch  = touches.anyObject() as UITouch
         location = touch.locationInView(self.view)
         
-        print(touch.view == imageView)
-        //print(touch.locationInView(self.view))
-        //print(event.touchesForView(self.view.subviews[0] as UIView))
+        if (touch.view == imageView) {
+            print("Grid was touched\n")
+        } else if (touch.view == pointView) {
+            print("Point was touched\n")
+        } else {
+            print("Nothing was touched\n")
+        }
     }
+}
+
+func drawPointImage(size: CGSize) -> UIImage {
+    // Setup our context
+    let bounds = CGRect(origin: CGPoint.zeroPoint, size: size)
+    let opaque = false
+    let scale: CGFloat = 0
+    UIGraphicsBeginImageContextWithOptions(size, opaque, scale)
+    let context = UIGraphicsGetCurrentContext()
+    
+    // Setup complete, do drawing here
+    CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
+    CGContextSetStrokeColorWithColor(context, UIColor.blackColor().CGColor)
+    CGContextSetLineWidth(context, 2.0)
+    
+    // Outer rectangle
+    CGContextFillRect(context, bounds)
+    CGContextStrokeRect(context, bounds)
+
+    // Drawing complete, retrieve the finished image and cleanup
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    
+    return image
 }
 
 func drawCustomImage(size: CGSize) -> UIImage {
